@@ -49,6 +49,7 @@ class TTermsAndConditionCheckBox extends StatelessWidget {
               ),
             ],
           ),
+          maxLines: 2,
         ),
       ],
     );
