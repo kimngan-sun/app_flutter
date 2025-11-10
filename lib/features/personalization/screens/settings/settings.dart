@@ -3,8 +3,9 @@ import 'package:flutter_application_1/common/widgets/appbar/appbar.dart';
 import 'package:flutter_application_1/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:flutter_application_1/common/widgets/list_tiles/user_profile_tiles.dart';
 import 'package:flutter_application_1/common/widgets/texts/section_heading.dart';
-import 'package:flutter_application_1/features/personalization/screens/widgets/profile/profile.dart';
-import 'package:flutter_application_1/features/personalization/screens/widgets/settings/settings_menu_tile.dart';
+import 'package:flutter_application_1/features/personalization/screens/address/address.dart';
+import 'package:flutter_application_1/features/personalization/screens/profile/profile.dart';
+import 'package:flutter_application_1/features/personalization/screens/settings/settings_menu_tile.dart';
 import 'package:flutter_application_1/utils/constants/colors.dart';
 import 'package:flutter_application_1/utils/constants/sizes.dart';
 import 'package:get/get.dart';
@@ -44,7 +45,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.safe_home,
                     title: 'Địa chỉ của tôi',
                     subtitle: 'Thiết lập địa chỉ giao hàng',
-                    onTap: () {},
+                    onTap: () => Get.to(() => UserAddressScreen()),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.shopping_cart,
