@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/common/widgets/appbar/appbar.dart';
 import 'package:flutter_application_1/common/widgets/images/t_circular_image.dart';
 import 'package:flutter_application_1/common/widgets/texts/section_heading.dart';
-import 'package:flutter_application_1/features/personalization/screens/widgets/profile/widgets/profile_menu.dart';
+import 'package:flutter_application_1/features/personalization/screens/profile/widgets/profile_menu.dart';
 import 'package:flutter_application_1/utils/constants/image_strings.dart';
 import 'package:flutter_application_1/utils/constants/sizes.dart';
-import 'package:iconsax/iconsax.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -54,7 +53,7 @@ class ProfileScreen extends StatelessWidget {
               const TSectionHeading(title: 'Thông tin cá nhân', showActionButton: false),
               const SizedBox(height: TSizes.spaceBtwItems),
 
-              TProfileMenu(title: 'User ID', value: '45678', icon: Iconsax.copy, onPressed: (){}),
+              TProfileMenu(title: 'User ID', value: '45678', onPressed: (){}),
               TProfileMenu(title: 'E-mail', value: 'coding_with_t', onPressed: (){}),
               TProfileMenu(title: 'Số điện thoại', value: '0357256005', onPressed: (){}),
               TProfileMenu(title: 'Giới tính', value: 'Male', onPressed: (){}),

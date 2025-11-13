@@ -8,11 +8,11 @@ class TProfileMenu extends StatelessWidget {
     this.icon = Iconsax.arrow_right_34,
     required this.title,
     required this.value,
-    required this.onPressed,
+    this.onPressed,
     });
 
   final IconData icon;
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
   final String title, value;
   @override
   Widget build(BuildContext context) {

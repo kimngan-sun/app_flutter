@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/features/personalization/screens/widgets/settings/settings.dart';
+import 'package:flutter_application_1/features/personalization/screens/settings/settings.dart';
 import 'package:flutter_application_1/features/shop/screens/home/home.dart';
 import 'package:flutter_application_1/features/shop/screens/store/store.dart';
 import 'package:flutter_application_1/utils/constants/colors.dart';
