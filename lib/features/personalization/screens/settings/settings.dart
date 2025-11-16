@@ -6,6 +6,7 @@ import 'package:flutter_application_1/common/widgets/texts/section_heading.dart'
 import 'package:flutter_application_1/features/personalization/screens/address/address.dart';
 import 'package:flutter_application_1/features/personalization/screens/profile/profile.dart';
 import 'package:flutter_application_1/features/personalization/screens/settings/settings_menu_tile.dart';
+import 'package:flutter_application_1/features/shop/screens/order/order.dart';
 import 'package:flutter_application_1/utils/constants/colors.dart';
 import 'package:flutter_application_1/utils/constants/sizes.dart';
 import 'package:get/get.dart';
@@ -24,7 +25,7 @@ class SettingsScreen extends StatelessWidget {
             TPrimaryHeaderContainer(
               child: Column(
                 children: [
-                  TAppBar(title: Text('Account', style: Theme.of(context).textTheme.headlineMedium!.apply(color: TColors.white))),
+                  TAppBar(title: Text('Tài khoản', style: Theme.of(context).textTheme.headlineMedium!.apply(color: TColors.white))),
 
                   ///User Profile Card
                   TUserProfileTile(onPressed: ()=> Get.to(()=> const ProfileScreen())),
@@ -38,14 +39,14 @@ class SettingsScreen extends StatelessWidget {
               child: Column(
                 children: [
                   ///Account Settings
-                  TSectionHeading(title: 'Account Settings', showActionButton: false),
+                  TSectionHeading(title: 'Cài đặt tài khoản', showActionButton: false),
                   SizedBox(height: TSizes.spaceBtwItems),
 
                   TSettingsMenuTile(
                     icon: Iconsax.safe_home,
                     title: 'Địa chỉ của tôi',
                     subtitle: 'Thiết lập địa chỉ giao hàng',
-                    onTap: () => Get.to(() => UserAddressScreen()),
+                    onTap: () => Get.to(() => const UserAddressScreen()),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.shopping_cart,
@@ -57,7 +58,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.bag_tick,
                     title: 'Đơn hàng của tôi',
                     subtitle: 'Đơn hàng đang xử lý và đã hoàn thành',
-                    onTap: () {},
+                    onTap: () => Get.to(() => const OrderScreen()),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.bank,

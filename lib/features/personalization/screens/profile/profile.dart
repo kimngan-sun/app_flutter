@@ -54,7 +54,7 @@ class ProfileScreen extends StatelessWidget {
               const SizedBox(height: TSizes.spaceBtwItems),
 
               TProfileMenu(title: 'User ID', value: '45678', onPressed: (){}),
-              TProfileMenu(title: 'E-mail', value: 'coding_with_t', onPressed: (){}),
+              TProfileMenu(title: 'E-mail', value: '2331540225@vaa.edu.vn', onPressed: (){}),
               TProfileMenu(title: 'Số điện thoại', value: '0357256005', onPressed: (){}),
               TProfileMenu(title: 'Giới tính', value: 'Male', onPressed: (){}),
               TProfileMenu(title: 'Ngày sinh', value: '11 Nov, 2005', onPressed: (){}),
@@ -64,7 +64,7 @@ class ProfileScreen extends StatelessWidget {
               Center(
                 child: TextButton(
                   onPressed: (){}, 
-                  child: const Text('Close Account',style: TextStyle(color: Colors.red))),
+                  child: const Text('Xóa tài khoản',style: TextStyle(color: Colors.red))),
               ),
             ],
           ),
