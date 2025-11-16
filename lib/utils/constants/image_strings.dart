@@ -23,15 +23,15 @@ class TImages{
   static const String verifyIllustration = 'assets/images/animations/contho.png';
 
   //Category Icons
-  static const String sportIcon = "assets/icons/categories/tải-xuống.png";
-  static const String clothIcon = "assets/icons/categories/tải-xuống.png";
-  static const String shoeIcon = "assets/icons/categories/tải-xuống.png";
-  static const String comesticsIcon = "assets/icons/categories/tải-xuống.png";
-  static const String animalIcon = "assets/icons/categories/tải-xuống.png";
-  static const String toyIcon = "assets/icons/categories/tải-xuống.png";
-  static const String furnitureIcon = "assets/icons/categories/tải-xuống.png";
-  static const String jeweleryIcon = "assets/icons/categories/tải-xuống.png";
-  static const String electronicsIcon = "assets/icons/categories/tải-xuống.png";
+  static const String sportIcon = "assets/icons/categories/contho.png";
+  static const String clothIcon = "assets/icons/categories/contho.png";
+  static const String shoeIcon = "assets/icons/categories/contho.png";
+  static const String comesticsIcon = "assets/icons/categories/contho.png";
+  static const String animalIcon = "assets/icons/categories/contho.png";
+  static const String toyIcon = "assets/icons/categories/contho.png";
+  static const String furnitureIcon = "assets/icons/categories/contho.png";
+  static const String jeweleryIcon = "assets/icons/categories/contho.png";
+  static const String electronicsIcon = "assets/icons/categories/contho.png";
 
   ///banner
   static const String promoBanner1 = 'assets/images/banners/contho.png';

@@ -14,7 +14,7 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: TAppBar(
         showBackArrow: true,
-        title: Text('Profile'),
+        title: Text('Tài khoản'),
       ),
       ///body
       body: SingleChildScrollView(

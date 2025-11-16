@@ -23,7 +23,7 @@ class TProductQuantityWithAddAndRemoveButton extends StatelessWidget {
           height: 32,
           size: TSizes.md,
           color: dark ? TColors.white : TColors.black,
-          backgroundColor: dark ? TColors.white : TColors.black,
+          backgroundColor: dark ? TColors.darkGrey.withOpacity(0.4) : TColors.grey.withOpacity(0.2),
         ),
         const SizedBox(width: TSizes.spaceBtwItems),
         Text('2', style: Theme.of(context).textTheme.titleSmall),

@@ -16,34 +16,51 @@ class TProductMetaData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        /// Price & Sale price
+
+        /// --- PRICE + SALE TAG ---
         Row(
           children: [
-            ///Sale tag
             TRoundedContainer(
               radius: TSizes.sm,
               backgroundColor: TColors.secondary.withOpacity(0.8),
-              padding: EdgeInsets.symmetric(horizontal: TSizes.sm, vertical: TSizes.xs),
-              child: Text('25%', style: Theme.of(context).textTheme.labelLarge!.apply(color: TColors.black)),
+              padding: const EdgeInsets.symmetric(
+                  horizontal: TSizes.sm, vertical: TSizes.xs),
+              child: Text(
+                '25%',
+                style: Theme.of(context)
+                    .textTheme
+                    .labelLarge!
+                    .apply(color: TColors.black),
+              ),
             ),
+
             const SizedBox(width: TSizes.spaceBtwItems),
 
-            ///Price
-            Text('\$250.000', style: Theme.of(context).textTheme.titleSmall!.apply(decoration: TextDecoration.lineThrough)),
+            Text(
+              '250.000đ',
+              style: Theme.of(context)
+                  .textTheme
+                  .titleSmall!
+                  .apply(decoration: TextDecoration.lineThrough),
+            ),
+
             const SizedBox(width: TSizes.spaceBtwItems),
             const TProductPriceText(price: 175000, isLarge: true),
           ],
         ),
+
         const SizedBox(height: TSizes.spaceBtwItems / 1.5),
 
-        /// Title
+        // --- TITLE ---
         const TProductTitleText(title: 'Quần áo size khủng long'),
+
         const SizedBox(height: TSizes.spaceBtwItems / 1.5),
 
-        /// Stock Status
+        // --- STOCK ---
         Row(
           children: [
             const TProductTitleText(title: 'Trạng thái'),
@@ -51,9 +68,10 @@ class TProductMetaData extends StatelessWidget {
             Text('Còn hàng', style: Theme.of(context).textTheme.titleMedium),
           ],
         ),
+
         const SizedBox(height: TSizes.spaceBtwItems / 1.5),
 
-        /// Brand
+        // --- BRAND ---
         Row(
           children: [
             TCircularImage(
@@ -62,7 +80,10 @@ class TProductMetaData extends StatelessWidget {
               height: 32,
               overlayColor: dark ? TColors.white : TColors.black,
             ),
-            const TBrandTitleWithVerifiedIcon(title: 'Khung Long', brandTextSize: TextSizes.medium),
+            const TBrandTitleWithVerifiedIcon(
+              title: 'Khủng Long',
+              brandTextSize: TextSizes.medium,
+            ),
           ],
         ),
       ],

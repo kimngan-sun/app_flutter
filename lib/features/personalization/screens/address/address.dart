@@ -20,7 +20,7 @@ class UserAddressScreen extends StatelessWidget {
       ),
       appBar: TAppBar(
         showBackArrow: true,
-        title: Text('Địa chỉ', style: Theme.of(context).textTheme.headlineSmall?.copyWith(color: TColors.white)),
+        title: Text('Địa chỉ', style: Theme.of(context).textTheme.headlineSmall?.copyWith(color: TColors.black)),
       ),
       body: SingleChildScrollView(
         child: Padding(

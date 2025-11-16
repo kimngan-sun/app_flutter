@@ -20,8 +20,8 @@ class TUserProfileTile extends StatelessWidget {
         height: 50,
         padding: 0,
       ),
-      title: Text('Coding with T', style: Theme.of(context).textTheme.headlineSmall!.apply(color: TColors.white)),
-      subtitle: Text('support@codingwithT.com', style: Theme.of(context).textTheme.headlineSmall!.apply(color: TColors.white)),
+      title: Text('Kim Ngan', style: Theme.of(context).textTheme.headlineSmall!.apply(color: TColors.white)),
+      subtitle: Text('2331540225@vaa.edu.vn', style: Theme.of(context).textTheme.headlineSmall!.apply(color: TColors.white)),
       trailing: IconButton(onPressed: onPressed, icon: const Icon(Iconsax.edit, color: TColors.white)),
     );
   }

@@ -6,6 +6,7 @@ import 'package:flutter_application_1/common/widgets/texts/section_heading.dart'
 import 'package:flutter_application_1/features/personalization/screens/address/address.dart';
 import 'package:flutter_application_1/features/personalization/screens/profile/profile.dart';
 import 'package:flutter_application_1/features/personalization/screens/settings/settings_menu_tile.dart';
+import 'package:flutter_application_1/features/shop/screens/cart/cart.dart';
 import 'package:flutter_application_1/features/shop/screens/order/order.dart';
 import 'package:flutter_application_1/utils/constants/colors.dart';
 import 'package:flutter_application_1/utils/constants/sizes.dart';
@@ -52,7 +53,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.shopping_cart,
                     title: 'Giỏ hàng của tôi',
                     subtitle: 'Thêm, xóa sản phẩm và tiến hành thanh toán',
-                    onTap: () {},
+                    onTap: () => Get.to(() => const CartScreen()),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.bag_tick,

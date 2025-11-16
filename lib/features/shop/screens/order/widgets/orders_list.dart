@@ -13,7 +13,7 @@ class TOrderListItems extends StatelessWidget {
     final dark = THelperFunctions.isDarkMode(context);
     return ListView.separated(
       shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
+      physics: const AlwaysScrollableScrollPhysics(),
       itemCount: 10,
       separatorBuilder: (_, __) => const SizedBox(height: TSizes.spaceBtwItems),
       itemBuilder: (_, index) => TRoundedContainer(

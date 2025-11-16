@@ -12,47 +12,57 @@ class TSingleAddress extends StatelessWidget {
   });
 
   final bool selectedAddress;
+
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
+
     return TRoundedContainer(
       showBorder: true,
       padding: const EdgeInsets.all(TSizes.md),
       width: double.infinity,
-      backgroundColor: selectedAddress ? TColors.primary.withOpacity(0.5) : Colors.transparent,
-      borderColor: selectedAddress 
-        ? Colors.transparent 
-          : dark 
-            ? TColors.darkGrey
-            : TColors.grey,
+      backgroundColor:
+          selectedAddress ? TColors.primary.withOpacity(0.5) : Colors.transparent,
+      borderColor: selectedAddress
+          ? Colors.transparent
+          : dark
+              ? TColors.darkGrey
+              : TColors.grey,
       margin: const EdgeInsets.only(bottom: TSizes.spaceBtwItems),
       child: Stack(
         children: [
-          Positioned(
-            right: 5,
-            top: 0,
-            child: Icon(
-              selectedAddress ? Iconsax.tick_circle5 : null,
-              color: selectedAddress
-                ? dark
-                  ?TColors.light
-                  : TColors.dark
-                : null,
+          /// Tick khi được chọn
+          if (selectedAddress)
+            Positioned(
+              right: 5,
+              top: 0,
+              child: Icon(
+                Iconsax.tick_circle5,
+                color: dark ? TColors.light : TColors.dark,
+              ),
             ),
-          ),
+
+          /// Nội dung địa chỉ
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text( 
+            children: const [
+              Text(
                 'Ngân Kim',
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.titleLarge,              
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
               ),
-              const SizedBox(height: TSizes.sm /2),
-              const Text('0357256005', maxLines: 1, overflow: TextOverflow.ellipsis),
-              const SizedBox(height: TSizes.sm /2),
-              const Text('Phuong Xuan, Quan Nam Tu Liem, Ha Noi, Viet Nam', softWrap: true),
+              SizedBox(height: TSizes.sm / 2),
+              Text(
+                '0357256005',
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+              SizedBox(height: TSizes.sm / 2),
+              Text(
+                'Phuong Xuan, Quan Nam Tu Liem, Ha Noi, Viet Nam',
+                softWrap: true,
+              ),
             ],
           ),
         ],
