@@ -2,11 +2,9 @@ class TPricingCalculator{
 
   // Tính tổng giá sản phẩm dựa trên thuế và phí vận chuyển
   static double calculateTotalPrice(double productPrice, String location){
-    double taxRate = getTaxRateForLocation(location);
-    double taxAmount = productPrice * taxRate;
 
-    double shippingCost = getShippingCost(location);
-    double totalPrice = productPrice + taxAmount + shippingCost;
+    double shippingCost = 20000;
+    double totalPrice = productPrice + shippingCost;
     return totalPrice;
   }
 

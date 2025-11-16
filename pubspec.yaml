@@ -51,6 +51,8 @@ flutter:
     - assets/icons/categories/
     - assets/images/products/
     - assets/images/user/
+    - assets/images/payment/
+    
 
   #------LOCAL FONTS--------#
   fonts:
