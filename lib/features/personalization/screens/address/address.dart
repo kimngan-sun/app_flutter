@@ -15,12 +15,12 @@ class UserAddressScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         backgroundColor: TColors.primary,
-        onPressed: () => Get.to(() =>const AddNewAddressScreen()),
+        onPressed: () => Get.to(() => const AddNewAddressScreen()),
         child: Icon(Iconsax.add, color: TColors.white),
       ),
       appBar: TAppBar(
         showBackArrow: true,
-        title: Text('Địa chỉ', style: Theme.of(context).textTheme.headlineSmall),
+        title: Text('Địa chỉ', style: Theme.of(context).textTheme.headlineSmall?.copyWith(color: TColors.white)),
       ),
       body: SingleChildScrollView(
         child: Padding(

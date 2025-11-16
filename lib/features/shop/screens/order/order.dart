@@ -12,9 +12,12 @@ class OrderScreen extends StatelessWidget {
       appBar: TAppBar(title: Text('Đơn hàng của tôi', style: Theme.of(context).textTheme.headlineSmall)),
       body: Padding(
         padding: EdgeInsets.all(TSizes.defaultSpace),
-
         ///Orders
-        child: TOrderListItems(),
+        child: Column(
+          children: [
+            Expanded(child: TOrderListItems()),
+          ],
+        ),
       ),
     );
   }

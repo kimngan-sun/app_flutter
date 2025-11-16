@@ -47,6 +47,6 @@ class TImages{
   static const String user = 'assets/images/user/contho.png';
 
   ///Payment
-  static const String vnpay = 'assets/images/payment/vnpay.webp';
+  static const String vnpay = 'assets/images/payment/vnpay.png';
   static const String successfulPaymentIcon = 'assets/images/payment/sucess.png';
 }
