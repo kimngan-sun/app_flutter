@@ -21,7 +21,7 @@ class StoreScreen extends StatelessWidget {
       child: Scaffold(
         ///Appbar
         appBar: TAppBar(
-          title: Text('Store', style: Theme.of(context).textTheme.headlineMedium),
+          title: Text('Cửa hàng', style: Theme.of(context).textTheme.headlineMedium),
           actions: [
             TCartCounterIcon(onPressed: (){}),
           ],
